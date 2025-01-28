@@ -5,20 +5,20 @@ pygame.init()
 screen= pygame.display.set_mode((800,400))
 pygame.display.set_caption('Bigyan Game')
 clock = pygame.time.Clock()
-test_font= pygame.font.Font(r'D:\bigyan\2_programing\pythan\pygame\font\Pixeltype.ttf', 50)
+test_font= pygame.font.Font(r'', 50)
 
 # test_surface = pygame.Surface((100, 200))
 # test_surface.fill('Red')
-sky_surface = pygame.image.load(r'D:\bigyan\2_programing\pythan\pygame\graphics\Sky.png').convert()
-ground_surface = pygame.image.load(r'D:\bigyan\2_programing\pythan\pygame\graphics\ground.png').convert()
+sky_surface = pygame.image.load(r'').convert()
+ground_surface = pygame.image.load(r'').convert()
 
 score_surf = test_font.render('Bigyan Game','false','black')
 score_rect = score_surf.get_rect(center = (400,50))
 
-snail_surface = pygame.image.load(r'D:\bigyan\2_programing\pythan\pygame\graphics\snail\snail1.png').convert_alpha()
+snail_surface = pygame.image.load(r'').convert_alpha()
 snail_rect =snail_surface.get_rect(bottomright =(600,300))
 
-player_surf = pygame.image.load(r'D:\bigyan\2_programing\pythan\pygame\graphics\Player\player_walk_1.png').convert_alpha()
+player_surf = pygame.image.load(r'').convert_alpha()
 player_rect = player_surf.get_rect(midbottom =(80,300))
 
 while True:
